@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editTextP1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/buttonP1Minus5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="attenuate"
+                    android:text="-5" />
+
+                <Button
+                    android:id="@+id/buttonP1Minus3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="attenuate"
+                    android:layout_weight="1"
+                    android:text="-3" />
+
+                <Button
+                    android:id="@+id/buttonP1Minus1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="attenuate"
+                    android:layout_weight="1"
+                    android:text="-1" />
+
+                <EditText
+                    android:id="@+id/editTextP1Value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:text="110"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/buttonP1Plus1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="attenuate"
+                    android:layout_weight="1"
+                    android:text="+1" />
+
+                <Button
+                    android:id="@+id/buttonP1Plus3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="attenuate"
+                    android:layout_weight="1"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/buttonP1Plus5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="attenuate"
+                    android:layout_weight="1"
+                    android:text="+5" />
+    </LinearLayout>
+</RelativeLayout>
